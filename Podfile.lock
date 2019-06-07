@@ -1,0 +1,22 @@
+PODS:
+  - Apollo (0.10.1):
+    - Apollo/Core (= 0.10.1)
+  - Apollo/Core (0.10.1)
+  - AppAuth (0.95.1)
+
+DEPENDENCIES:
+  - Apollo (~> 0.10)
+  - AppAuth (~> 0.95)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Apollo
+    - AppAuth
+
+SPEC CHECKSUMS:
+  Apollo: 4d690a9b2e48e8820182df4b988d7a253e1ee589
+  AppAuth: cd34aac431e5c77c46ec7f03935377faa8c5808b
+
+PODFILE CHECKSUM: 6ec6916ee6ae20094a5a3b5c27a2bad55af50082
+
+COCOAPODS: 1.6.1
