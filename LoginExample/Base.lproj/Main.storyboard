@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nca-UJ-s7Q">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nca-UJ-s7Q">
                                 <rect key="frame" x="77.5" y="487" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.017866427078843117" green="0.52474504709243774" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -42,10 +42,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nca-UJ-s7Q" secondAttribute="bottom" constant="150" id="XjL-UN-GNt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nca-UJ-s7Q" secondAttribute="bottom" priority="250" constant="20" id="Fpg-cX-YsS"/>
                             <constraint firstItem="nca-UJ-s7Q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eAW-48-GIb"/>
                             <constraint firstItem="C0k-rN-sCs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eK5-MW-a3a"/>
                             <constraint firstItem="C0k-rN-sCs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pci-Ez-vne"/>
+                            <constraint firstItem="nca-UJ-s7Q" firstAttribute="top" relation="lessThanOrEqual" secondItem="C0k-rN-sCs" secondAttribute="bottom" priority="750" constant="80" id="zaJ-9d-sH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -196,6 +197,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1cU-hz-uv4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1yz-IS-MAe"/>
                     </connections>
