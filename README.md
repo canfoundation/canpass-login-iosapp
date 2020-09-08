@@ -1,6 +1,6 @@
-# CryptoBadge Login for the iOS app
+# CANpass Login for the iOS app
 
-This is a simple example iOS app written in [AppAuth](https://appauth.io/) and [Apollo GraphQL](https://www.apollographql.com/), and demonstrates how to 'Login with CryptoBadge' for an iOS app.
+This is a simple example iOS app written in [AppAuth](https://appauth.io/) and [Apollo GraphQL](https://www.apollographql.com/), and demonstrates how to 'Login with CANpass' for an iOS app.
 
 ## Setup & Open the Project
 
@@ -34,8 +34,8 @@ This workspace is configured to include AppAuth and Apollo via CocoaPods.
 #### In the file `AppDelegate.swift`
 
 ```swift
-let kAuthorizationEndpoint  = "https://accounts.cryptobadge.app/oauth2/authorize";
-let kTokenEndpoint          = "https://accounts.cryptobadge.app/oauth2/token";
+let kAuthorizationEndpoint  = "https://canpass.me/oauth2/authorize";
+let kTokenEndpoint          = "https://canpass.me/oauth2/token";
 let kGraphQLEndpoint        = "https://api.cryptobadge.app/graphql";
 let kClientID               = "YOUR_CLIENT_ID";
 let kRedirectURI            = "app.cryptobadge.oauth2:/oauth2redirect/sample-provider";

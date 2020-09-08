@@ -10,8 +10,8 @@ import UIKit
 import AppAuth
 import Apollo
 
-let kAuthorizationEndpoint  = "https://accounts.cryptobadge.app/oauth2/authorize";
-let kTokenEndpoint          = "https://accounts.cryptobadge.app/oauth2/token";
+let kAuthorizationEndpoint  = "https://canpass.me/oauth2/authorize";
+let kTokenEndpoint          = "https://canpass.me/oauth2/token";
 let kGraphQLEndpoint        = "https://api.cryptobadge.app/graphql";
 let kClientID               = "YOUR_CLIENT_ID";
 let kRedirectURI            = "app.cryptobadge.oauth2:/oauth2redirect/sample-provider";
@@ -29,14 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     return true
   }
-  
+
   func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-    
+
     if let authorizationFlow = self.currentAuthorizationFlow, authorizationFlow.resumeExternalUserAgentFlow(with: url) {
       self.currentAuthorizationFlow = nil
       return true
     }
-    
+
     return false
   }
 

@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="220" id="WZ5-LT-DHy"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login with Cryptobadge">
+                                <state key="normal" title="Login with CANpass">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
